@@ -1,6 +1,14 @@
-/*
-package com.example.quote
+package com.example.quote;
 
-object QuoteSingleton {
-    var quotes: List<Quote> = emptyList()
-}*/
+// Singleton object for managing quotes
+object QuoteSingletonKotlin {
+    private var quotes: List<Quote> = emptyList()
+
+    fun getQuotes(): List<Quote> {
+        return quotes
+    }
+
+    fun setQuotes(newQuotes: List<Quote>) {
+        quotes = newQuotes
+    }
+}
